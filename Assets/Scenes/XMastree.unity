@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4022581783257168, guid: 50d1c1bde47eaa140a5dd59d7acaf672, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022581783257168, guid: 50d1c1bde47eaa140a5dd59d7acaf672, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022581783257168, guid: 50d1c1bde47eaa140a5dd59d7acaf672, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 20844680837392654, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -184,6 +196,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 20844680837392654, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.42042887
+      objectReference: {fileID: 0}
+    - target: {fileID: 20844680837392654, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.15914223
+      objectReference: {fileID: 0}
+    - target: {fileID: 20844680837392654, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: near clip plane
+      value: 8.6602545
+      objectReference: {fileID: 0}
+    - target: {fileID: 20844680837392654, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: far clip plane
+      value: 18.660255
       objectReference: {fileID: 0}
     - target: {fileID: 20839991195266774, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
         type: 3}
@@ -195,6 +227,26 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 20839991195266774, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.42042887
+      objectReference: {fileID: 0}
+    - target: {fileID: 20839991195266774, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.15914223
+      objectReference: {fileID: 0}
+    - target: {fileID: 20839991195266774, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: near clip plane
+      value: 8.6602545
+      objectReference: {fileID: 0}
+    - target: {fileID: 20839991195266774, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: far clip plane
+      value: 18.660255
+      objectReference: {fileID: 0}
     - target: {fileID: 20734853834929206, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -205,6 +257,26 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 20734853834929206, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.26128668
+      objectReference: {fileID: 0}
+    - target: {fileID: 20734853834929206, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.15914223
+      objectReference: {fileID: 0}
+    - target: {fileID: 20734853834929206, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: near clip plane
+      value: 8.6602545
+      objectReference: {fileID: 0}
+    - target: {fileID: 20734853834929206, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: far clip plane
+      value: 18.660255
+      objectReference: {fileID: 0}
     - target: {fileID: 20743366143048340, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -214,6 +286,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 20743366143048340, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.5795711
+      objectReference: {fileID: 0}
+    - target: {fileID: 20743366143048340, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.15914223
+      objectReference: {fileID: 0}
+    - target: {fileID: 20743366143048340, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: near clip plane
+      value: 8.6602545
+      objectReference: {fileID: 0}
+    - target: {fileID: 20743366143048340, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: far clip plane
+      value: 18.660255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813423477037676, guid: 50d1c1bde47eaa140a5dd59d7acaf672,
+        type: 3}
+      propertyPath: hologramArea
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50d1c1bde47eaa140a5dd59d7acaf672, type: 3}
@@ -241,7 +338,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459804124}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
@@ -325,7 +422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012497550290, guid: 442cc9c3766ed4183a4c719afda28280, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000012497550290, guid: 442cc9c3766ed4183a4c719afda28280, type: 3}
       propertyPath: m_LocalPosition.z
@@ -363,6 +460,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4000012497550290, guid: 442cc9c3766ed4183a4c719afda28280, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012497550290, guid: 442cc9c3766ed4183a4c719afda28280, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000013166310428, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 73e68b84fd461e9468a4648496f9c932, type: 2}
+    - target: {fileID: 23000010659659602, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e17e8ba8e42f8c40a0f0bc03041b63b, type: 2}
+    - target: {fileID: 23000012214132574, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e17e8ba8e42f8c40a0f0bc03041b63b, type: 2}
+    - target: {fileID: 23000012860917698, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79b1590589617184a8c47ebe76318423, type: 2}
+    - target: {fileID: 23000012598162440, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e17e8ba8e42f8c40a0f0bc03041b63b, type: 2}
+    - target: {fileID: 23000013944481610, guid: 442cc9c3766ed4183a4c719afda28280,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e17e8ba8e42f8c40a0f0bc03041b63b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 442cc9c3766ed4183a4c719afda28280, type: 3}
 --- !u!1001 &1601810541963969029
@@ -385,7 +520,7 @@ PrefabInstance:
     - target: {fileID: 2427267507700400711, guid: 15ac038f971252047be01ff5c9d6344b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.16
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 2427267507700400711, guid: 15ac038f971252047be01ff5c9d6344b,
         type: 3}
@@ -432,5 +567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 395140789496011806, guid: 15ac038f971252047be01ff5c9d6344b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b8090af6aa0d4b4a853a063708f01ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ac038f971252047be01ff5c9d6344b, type: 3}
