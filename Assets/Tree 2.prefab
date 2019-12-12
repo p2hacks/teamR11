@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7281155099625752530}
   - component: {fileID: 4167467610857028209}
   - component: {fileID: 395140789496011806}
+  - component: {fileID: 1948169613}
   m_Layer: 0
   m_Name: Tree 2
   m_TagString: Untagged
@@ -89,6 +90,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1948169613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006954833047835381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640ace8b0cb284a23a90b4d332867325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &-9015579772492217654
 Mesh:
   m_ObjectHideFlags: 0
