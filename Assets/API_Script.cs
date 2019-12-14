@@ -27,7 +27,7 @@ public class API_Script : MonoBehaviour
             //もしWindowsで作業フォルダのパスが取れてない場合は下のメソッドをパスの前に足す
             //   Directory.GetCurrentDirectory()
             //そのうえでスラッシュ(/)をバックスラッシュ(¥)にする
-            using (StreamReader sr = new StreamReader("Assets/API_KEY.txt")){
+            using (StreamReader sr = new StreamReader(Application.dataPath + "/StreamingAssets/API_KEY.txt")){
                 KEY = sr.ReadToEnd();
             }
         }
