@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MiniJSON;
+using TMPro;
 
 public class API_Script : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class API_Script : MonoBehaviour
     public GameObject Snowman_a;
     public GameObject Rain;
     public GameObject Lightrain;
+    public TextMeshPro tmp_text;
 
     // Start is called before the first frame update
     IEnumerator Start()
@@ -44,6 +46,10 @@ public class API_Script : MonoBehaviour
         var main = (IDictionary)jsonDict["main"];
         double Kelvin = (double)main["temp"]; //ケルビン(K)
         int Celsius = (int)Math.Round(Kelvin - 273.15); //摂氏(°C)に変換
+
+        string tmp = Celsius.ToString();
+        tmp_text.text = tmp + "°C";
+
         Debug.Log("Celsius = " + Celsius + "°C");
         //Celsiusによる雪だるまの描画を分類
         Boolean snowman_melt;
