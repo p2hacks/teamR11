@@ -52,8 +52,8 @@ public class Hologram : MonoBehaviour
     {
         if (type == Direction.topDown)
         {
-            cameras[1].transform.eulerAngles = new Vector3(0, 0, 180);
-            cameras[2].transform.eulerAngles = new Vector3(0, 180, 0);
+            cameras[1].transform.eulerAngles = new Vector3(0, 0, 0);
+            cameras[2].transform.eulerAngles = new Vector3(0, 180, 180);
         }
         else if (type == Direction.bottomUp)
         {
@@ -61,8 +61,8 @@ public class Hologram : MonoBehaviour
             cameras[2].transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        cameras[3].transform.eulerAngles = new Vector3(0, 90, 270);
-        cameras[4].transform.eulerAngles = new Vector3(0, 270, 90);
+        cameras[3].transform.eulerAngles = new Vector3(0, 90, 90);
+        cameras[4].transform.eulerAngles = new Vector3(0, 270, 270);
     }
 
     void CameraRect(Vector2 res)
