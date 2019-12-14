@@ -4,13 +4,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MiniJSON;
+using TMPro;
 
 public class API_Script : MonoBehaviour
 {
     private const string url = "http://api.openweathermap.org/data/2.5/weather?q="; //リクエスト送信先
     private const string locale = "Hakodate,jp"; // "(city name),(country code)"で指定
     private string KEY = null; //外部ファイルから読み込んだAPIキーを格納する変数
-    
+    public GameObject Snow;
+    public GameObject Snowstorm;
+    public GameObject Snowman;
+    public GameObject Snowman_a;
+    public GameObject Rain;
+    public GameObject Lightrain;
+    public TextMeshPro tmp_text;
+
     // Start is called before the first frame update
     IEnumerator Start()
     {
@@ -38,6 +46,10 @@ public class API_Script : MonoBehaviour
         var main = (IDictionary)jsonDict["main"];
         double Kelvin = (double)main["temp"]; //ケルビン(K)
         int Celsius = (int)Math.Round(Kelvin - 273.15); //摂氏(°C)に変換
+
+        string tmp = Celsius.ToString();
+        tmp_text.text = tmp + "°C";
+
         Debug.Log("Celsius = " + Celsius + "°C");
         //Celsiusによる雪だるまの描画を分類
         Boolean snowman_melt;
@@ -66,7 +78,7 @@ public class API_Script : MonoBehaviour
                 else weather_class = 1; //小雨
                 break;
             case 6: //雪クラス
-                if(weather_id <= 601 || weather_id == 611) {
+                if(weather_id <= 601 || weather_id == 611 || weather_id == 620 || weather_id == 621) {
                     weather_class = 3; //雪
                 }
                 else if(weather_id == 615 || weather_id == 616) {
@@ -86,6 +98,38 @@ public class API_Script : MonoBehaviour
         Debug.Log("weather_class : " + weather_class);
         Debug.Log("Celsius : " + Celsius);
         Debug.Log("snowman_melt : " + snowman_melt);
+        
+        switch (weather_class)
+        {
+            case 1:
+                Lightrain.SetActive(true);
+                break;
+            case 2:
+                Rain.SetActive(true);
+                break;
+            case 3:
+                Snow.SetActive(true);
+                break;
+            case 4:
+                Snowstorm.SetActive(true);
+                break;
+            case 5:
+                Snow.SetActive(true);
+                Lightrain.SetActive(true);
+                break;
+            default:
+                break;
+
+        }
+        if (snowman_melt)
+        {
+            Snowman_a.SetActive(true);
+        }
+        else
+        {
+            Snowman.SetActive(true);
+        }
+    
     }
 
     // Update is called once per frame
